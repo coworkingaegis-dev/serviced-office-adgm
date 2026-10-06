@@ -1,0 +1,53 @@
+@import '@fontsource-variable/fraunces';
+@import '@fontsource-variable/fraunces/wght-italic.css';
+@import '@fontsource-variable/plus-jakarta-sans';
+
+:root {
+  /* Midnight ink, ivory paper and brass — a letterhead / envelope palette */
+  --ivory: #f7f3ea;
+  --paper: #fffdf8;
+  --sand: #efe8d8;
+  --ink: #12162e;
+  --muted: #565467;
+  --line: #e4dccb;
+  --line-strong: #d3c8b2;
+  --midnight: #141a3a;
+  --midnight-2: #1c2350;
+  --night: #0b0f26;
+  --brass: #c79a4b;      /* on dark */
+  --brass-soft: #e8cf9c;
+  --brass-ink: #855f1f;  /* brass text on light (AA) */
+
+  --serif: 'Fraunces Variable', 'Fraunces', Georgia, serif;
+  --sans: 'Plus Jakarta Sans Variable', 'Plus Jakarta Sans', 'Segoe UI', system-ui, sans-serif;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --hd-h: 72px;
+  --gutter: clamp(20px, 4vw, 44px);
+  --r-xl: 28px;
+  --r-lg: 20px;
+  --r-md: 14px;
+  --shadow: 0 1px 2px rgba(18, 22, 46, .05), 0 22px 44px -26px rgba(18, 22, 46, .35);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; scroll-padding-top: calc(var(--hd-h) + 16px); -webkit-text-size-adjust: 100%; }
+html, body { width: 100%; overflow-x: clip; }
+html.menu-locked { overflow: hidden; }
+body { font-family: var(--sans); font-size: 1.0625rem; line-height: 1.65; color: var(--ink); background: var(--ivory); -webkit-font-smoothing: antialiased; }
+h1, h2 { font-family: var(--serif); font-weight: 500; line-height: 1.06; letter-spacing: -0.02em; font-variation-settings: 'SOFT' 50, 'opsz' 96; }
+h3, h4 { font-family: var(--sans); font-weight: 700; line-height: 1.3; }
+img, svg { display: block; max-width: 100%; }
+img { height: auto; }
+a { color: inherit; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+ul, ol { list-style: none; }
+address { font-style: normal; }
+table { border-collapse: collapse; width: 100%; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--brass-ink); outline-offset: 3px; border-radius: 4px; }
+::selection { background: var(--brass-soft); color: var(--ink); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
