@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Reveal } from './Motion'
 import Icon from './Icon'
-import { testimonials, guides, faqs, images, BUSINESS, MAIN_SITE, VO_PRICE } from '../data/content'
+import { testimonials, faqs, images, BUSINESS, VO_PRICE } from '../data/content'
 import { PhoneLink } from './Navbar'
 
 const initials = (n) => n.split(' ').map((p) => p[0]).slice(0, 2).join('')
@@ -16,7 +16,7 @@ export function Reviews() {
         <div className="rev-head">
           <p className="eyebrow">Member reviews</p>
           <h2 id="rev-title">Founders who chose an Addax Tower business address</h2>
-          <p>Reviews as published on <a href={`${MAIN_SITE}/`}>aegiscoworking.ae</a>.</p>
+          <p>Two of our member reviews — <a href={BUSINESS.mapsUrl} target="_blank" rel="noopener noreferrer">read more on Google</a>.</p>
           <div className="rev-nav">
             <button type="button" onClick={() => go(-1)} aria-label="Previous review"><Icon name="arrow" size={18} /></button>
             <span aria-live="polite">{String(i + 1).padStart(2, '0')} / {String(testimonials.length).padStart(2, '0')}</span>
@@ -55,33 +55,6 @@ export function Reviews() {
   )
 }
 
-export function Guides() {
-  return (
-    <section className="guides sec" id="guides" aria-labelledby="guides-title">
-      <div className="wrap">
-        <div className="head head-row">
-          <div>
-            <p className="eyebrow">From the Aegis blog</p>
-            <h2 id="guides-title">Virtual office and registered address guides</h2>
-          </div>
-          <p>Registration, FSRA rules, shared addresses and costs — read before you pick an ADGM office solution. <a href={`${MAIN_SITE}/blogs`}>All articles</a></p>
-        </div>
-        <ul className="g-grid">
-          {guides.map((g, i) => (
-            <Reveal as="li" key={g.slug} variant="flip" delay={(i % 4) * 80}>
-              <a href={g.url}>
-                <span className="g-n" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-                <span className="g-tag">{g.tag}</span>
-                <span className="g-title">{g.title}</span>
-                <span className="g-go" aria-hidden="true"><Icon name="arrow" size={16} /></span>
-              </a>
-            </Reveal>
-          ))}
-        </ul>
-      </div>
-    </section>
-  )
-}
 
 export function FAQ() {
   return (
@@ -131,8 +104,7 @@ export function Location() {
           <h2 id="loc-title">Addax Tower virtual office, inside ADGM</h2>
           <p className="loc-sub">
             A virtual office in Al Reem Island at Addax Tower is a genuine ADGM business address — Al Reem
-            Island is part of the ADGM jurisdiction.{' '}
-            <a href={`${MAIN_SITE}/blog/is-al-reem-island-part-of-adgm`}>Is Al Reem Island part of ADGM?</a>
+            Island is part of the ADGM jurisdiction.
           </p>
           <p className="loc-sub">
             Comparing virtual office Abu Dhabi cost across providers? The virtual office Addax Tower address is an
