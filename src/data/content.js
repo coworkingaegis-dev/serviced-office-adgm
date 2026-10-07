@@ -16,9 +16,9 @@ import meetingImg from '../assets/meeting-room-virtual-office-adgm.webp'
 
 export const SITE_URL = 'https://servicedofficeadgm.online'
 export const MAIN_SITE = 'https://www.aegiscoworking.ae'
-export const PAGE_TITLE = 'Virtual Office ADGM from AED 292 & Serviced Office | Aegis'
+export const PAGE_TITLE = 'Serviced Office ADGM & Virtual Address for Overseas Founders'
 export const PAGE_DESCRIPTION =
-  'Virtual office in ADGM from AED 292/month: ADGM registered office address at Addax Tower, mail handling and meeting rooms. Serviced office from AED 4,500.'
+  'Serviced office ADGM and virtual office for overseas founders: register your ADGM company from abroad with an Addax Tower address from AED 292/month.'
 export const DATE_PUBLISHED = '2026-10-06'
 export const DATE_MODIFIED = '2026-10-06'
 
@@ -59,7 +59,7 @@ export const sections = [
 ]
 
 // Words cycled in the hero rotator
-export const rotatorWords = ['virtual office', 'registered address', 'Private office', 'executive office', 'mailing address']
+export const rotatorWords = ['virtual office', 'registered address', 'serviced office', 'executive office', 'mailing address']
 
 // Full keyword set (structured data + llms files; visible copy works them in as sentences)
 export const keywords = [
@@ -135,14 +135,10 @@ export const audiences = [
 ]
 
 // Genuine reviews published on aegiscoworking.ae (verbatim)
+// Two genuine member reviews, word for word — a different pair on each site
 export const testimonials = [
   { quote: 'Very happy with the service from Aegis Coworking. We needed a professional business address in Abu Dhabi without committing to a large traditional office, and Aegis provided a practical solution. The team is responsive and professional.', name: 'Uzair Tahir', role: 'Tech Startup Founder' },
   { quote: 'Aegis coworking provide super professional services especially with the pricing, and the customer service, i needed the license and a space for one of my team member and they did all within a week time, my team member loved the space. I will highly suggest if any on is looking to get a license and a space in ADGM go for Aegis coworking.', name: 'Ubaid Zia', role: 'Startup Founder' },
-  { quote: 'I was specifically looking for the cheapest coworking space in ADGM and wanted a privacy environment rather than just a desk. Aegis offered a good balance of price, location, and facilities.', name: 'Naveeda Haseeb', role: 'Startup Founder' },
-  { quote: 'We were comparing affordable coworking space in ADGM and found Aegis to be a very practical choice. The workspace feels professional while keeping costs affordable.', name: 'John Paints', role: 'Software Analyst' },
-  { quote: 'For businesses looking for a low cost office in ADGM, Aegis provides flexible office space and a professional seating. The team made the setup process very easy.', name: 'Haseeb Awan', role: 'Entrepreneur' },
-  { quote: 'Aegis Coworking is a convenient workspace in Abu Dhabi for startups and growing companies. The flexible workspace options, meeting room and hot desk helped us avoid the commitment of a traditional office.', name: 'Kasim Malikkandy', role: 'Consultant' },
-  { quote: 'Nice suitable area for coworking for Adam incorporation.', name: 'Ali Kutty Faizy', role: 'Entrepreneur' },
 ]
 
 // Blog articles on aegiscoworking.ae connected to virtual office / registered address / serviced office
@@ -165,12 +161,10 @@ export const faqs = [
   {
     q: 'How much does a virtual office in ADGM cost?',
     a: 'A virtual office at Aegis Coworking in ADGM starts from AED 292 per month (regular price AED 350). That is the Basic package with a registered ADGM business address, mail handling and directory listing. Premium and Enterprise packages add a UAE phone line, call answering, meeting room access and account management — ask us for a quote.',
-    link: { text: 'ADGM coworking and office cost guide 2026', url: `${MAIN_SITE}/blog/adgm-coworking-space-cost-2026` },
   },
   {
     q: 'What is a virtual office in ADGM?',
     a: 'A virtual office in ADGM gives your company a registered office address inside the Abu Dhabi Global Market jurisdiction, plus mail handling and on-demand meeting rooms, without renting a full-time office. At Aegis Coworking the address is Office 3812, Addax Tower, Al Reem Island.',
-    link: { text: 'Virtual office ADGM explained', url: `${MAIN_SITE}/blog/virtual-office-adgm-your-prestigious-business-address-minus-the-cost` },
   },
   {
     q: 'Can I use the virtual office address for ADGM company registration?',
@@ -179,7 +173,6 @@ export const faqs = [
   {
     q: 'Do I need a physical office, or is a virtual office enough in ADGM?',
     a: 'Many non-regulated ADGM companies can use a virtual office or flexi desk. FSRA-regulated firms usually need physical premises, such as a serviced private office. Check your licence type before choosing.',
-    link: { text: 'ADGM FSRA office requirements', url: `${MAIN_SITE}/blog/adgm-fsra-office-requirements` },
   },
   {
     q: 'What is included in the virtual office packages?',
@@ -196,22 +189,19 @@ export const faqs = [
   {
     q: 'Is Addax Tower on Al Reem Island inside ADGM?',
     a: 'Yes. Addax Tower on Al Reem Island is within the ADGM jurisdiction, so an Addax Tower business address is a genuine ADGM business address.',
-    link: { text: 'Is Al Reem Island part of ADGM?', url: `${MAIN_SITE}/blog/is-al-reem-island-part-of-adgm` },
   },
   {
     q: 'Can I register an ADGM company from abroad with a virtual office?',
     a: 'Many international founders set up remotely and use a virtual office for the ADGM company address. See how remote registration works before you start.',
-    link: { text: 'Registering an ADGM company remotely', url: `${MAIN_SITE}/blog/adgm-company-registration-remote-uae` },
   },
   {
     q: 'Can two companies share one virtual office address?',
     a: 'Each ADGM company needs its own registered address arrangement. Ask us about setups for more than one company.',
-    link: { text: 'Can two ADGM companies share a registered address?', url: `${MAIN_SITE}/blog/adgm-shared-registered-address-multiple-companies` },
+    link: { text: 'Can multiple companies share one ADGM address?', url: 'https://www.aegiscoworking.ae/blog/adgm-shared-registered-address-multiple-companies' },
   },
   {
     q: 'What is a serviced office or executive office in ADGM?',
     a: 'A serviced office is a fully furnished private office with internet, cleaning, reception and utilities included in one monthly price. At Aegis, serviced and executive offices on Al Reem Island start from AED 4,500 per month for teams of 1 to 20+, with 24/7 access and a registered ADGM business address.',
-    link: { text: 'Private office rent in ADGM: 2026 guide', url: `${MAIN_SITE}/blog/private-office-rent-adgm-cost-what-to-expect-in-2026` },
   },
   {
     q: 'Can I upgrade from a virtual office to a desk or serviced office later?',
@@ -220,10 +210,18 @@ export const faqs = [
   {
     q: 'Can I run my ADGM company from home with a virtual office?',
     a: 'Many founders keep the virtual office as their registered ADGM address and work from home. Your licence obligations still apply, so read our guide first.',
-    link: { text: 'Running your ADGM company from home', url: `${MAIN_SITE}/blog/adgm-work-from-home-registered-address` },
+    link: { text: 'Working from home with an ADGM registered address', url: 'https://www.aegiscoworking.ae/blog/adgm-work-from-home-registered-address' },
   },
   {
     q: 'How do I get started?',
     a: 'Message us on WhatsApp or call +971 50 392 6316. Tours of Addax Tower run Monday to Friday, 9 AM–6 PM, and we can send a video walkthrough if you are abroad.',
+  },
+  {
+    q: 'Can I manage my ADGM address without being in Abu Dhabi?',
+    a: 'Yes. Mail handling and forwarding are included with the virtual office, and we can share a video walkthrough of the office on WhatsApp before you sign.',
+  },
+  {
+    q: 'What happens when I move to Abu Dhabi?',
+    a: 'You can upgrade from the virtual office to a desk or a serviced private office on the same floor, keeping your company at the same Addax Tower address.',
   },
 ]
