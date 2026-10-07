@@ -1,14 +1,7 @@
 import aegisLogo from '../assets/aegis-logo-96.png'
-import { MAIN_SITE, BUSINESS } from '../data/content'
+import { BUSINESS } from '../data/content'
+import { sections, BOOK_URL, PhoneLink } from './Navbar'
 
-const spaces = [
-  ['Virtual Office', '/virtual-office'], ['Private Office', '/private-office'], ['Dedicated Desk', '/office-space'], ['Flexi Desk', '/office-space'],
-  ['Meeting Room', '/meeting-room'], ['Day Pass', '/day-pass'],
-]
-const company = [
-  ['Home', '/'], ['Hot Deals', '/pricing'], ['Blog', '/blogs'], ['About Us', '/about'],
-  ['Addax Tower Business Centre', '/addax-tower-al-reem-island'], ['Contact Us', '/contact'],
-]
 const socials = [
   { label: 'Instagram', href: 'https://www.instagram.com/aegis.coworking/', icon: <><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.3" cy="6.7" r=".9" fill="currentColor" stroke="none" /></> },
   { label: 'LinkedIn', href: 'https://www.linkedin.com/company/aegis-coworking/', icon: <><path d="M7 10v7M7 7v.01M11 17v-4a2.5 2.5 0 0 1 5 0v4M11 10v7" /><rect x="3" y="3" width="18" height="18" rx="3" /></> },
@@ -20,7 +13,7 @@ function Footer() {
     <footer className="ft">
       <div className="wrap ft-grid">
         <div className="ft-brand">
-          <a href={`${MAIN_SITE}/`} className="ft-logo">
+          <a href="#top" className="ft-logo">
             <img src={aegisLogo} alt="" width="96" height="96" loading="lazy" decoding="async" />
             <span>Aegis{' '}<b>Coworking</b></span>
           </a>
@@ -38,27 +31,31 @@ function Footer() {
             ))}
           </ul>
         </div>
-        <nav className="ft-col" aria-label="Our spaces">
-          <h2>Our spaces</h2>
-          <ul>{spaces.map(([l, p]) => <li key={l}><a href={`${MAIN_SITE}${p}`}>{l}</a></li>)}</ul>
+        <nav className="ft-col" aria-label="On this page">
+          <h2>On this page</h2>
+          <ul>{sections.map((s) => <li key={s.to}><a href={s.to}>{s.label}</a></li>)}</ul>
         </nav>
-        <nav className="ft-col" aria-label="Company">
-          <h2>Company</h2>
-          <ul>{company.map(([l, p]) => <li key={l}><a href={`${MAIN_SITE}${p}`}>{l}</a></li>)}</ul>
-        </nav>
+        <div className="ft-col">
+          <h2>Get in touch</h2>
+          <ul>
+            <li><a href={BOOK_URL} target="_blank" rel="noopener noreferrer">Book a visit</a></li>
+            <li><a href={BUSINESS.whatsapp} target="_blank" rel="noopener noreferrer">WhatsApp us</a></li>
+            <li><PhoneLink>{BUSINESS.phoneDisplay}</PhoneLink></li>
+            <li><a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a></li>
+          </ul>
+        </div>
         <div className="ft-col">
           <h2>Visit us</h2>
           <address>
             <p>{BUSINESS.street},<br />{BUSINESS.city}, {BUSINESS.country}</p>
-            <p><a href={BUSINESS.phoneTel}>{BUSINESS.phoneDisplay}</a></p>
-            <p><a href={`mailto:${BUSINESS.email}`}>{BUSINESS.email}</a></p>
+            <p><a href={BUSINESS.mapsUrl} target="_blank" rel="noopener noreferrer">Get directions</a></p>
           </address>
-          <p className="ft-hours">24/7 for members. Tours Mon–Fri, 9:00 AM–6:00 PM</p>
+          <p className="ft-hours">24/7 for dedicated desk &amp; office members. Tours Mon–Fri, 9:00 AM–6:00 PM</p>
         </div>
       </div>
       <div className="wrap ft-bottom">
         <p>© 2026 Aegis Coworking. All rights reserved.</p>
-        <p><a href={`${MAIN_SITE}/privacy-policy`}>Privacy Policy</a><span aria-hidden="true">·</span>Terms &amp; Conditions</p>
+        <p>Addax Tower, Al Reem Island, ADGM</p>
       </div>
     </footer>
   )
