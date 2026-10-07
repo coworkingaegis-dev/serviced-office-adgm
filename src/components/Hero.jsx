@@ -49,7 +49,7 @@ function Hero() {
             <span className="kicker-line" aria-hidden="true" />Addax Tower · Al Reem Island · ADGM
           </p>
           <h1 id="hero-title" className="hero-title hl" style={{ '--d': 1 }}>
-            Virtual office &amp; serviced office in ADGM, <em>from one prestigious address</em>
+            Virtual office &amp; serviced office in ADGM, <em>for founders setting up from abroad</em>
           </h1>
 
           <p className="rotator hl" style={{ '--d': 2 }}>
@@ -63,8 +63,8 @@ function Hero() {
           </p>
 
           <p className="hero-lead hl" style={{ '--d': 3 }}>
-            An ADGM registered office address at Office 3812, Addax Tower — the virtual business address
-            for company registration and licence renewals, with mail handling and meeting room access.
+            Setting up from outside the UAE? Get an ADGM registered office address at Office 3812, Addax Tower for
+            company registration and licence renewals, with mail handling and meeting rooms for when you visit.
             Virtual office in Abu Dhabi from <strong>AED {VO_PRICE}/month</strong>; serviced and executive office from AED 4,500.
           </p>
           <div className="hero-ctas hl" style={{ '--d': 4 }}>
