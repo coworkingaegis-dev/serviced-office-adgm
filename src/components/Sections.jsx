@@ -22,7 +22,7 @@ export function Answer() {
             on-demand meeting rooms are usually included.
           </p>
           <p>
-            At <a href={`${MAIN_SITE}/virtual-office`}>Aegis Coworking</a>, your ADGM company address is
+            At Aegis Coworking, your ADGM company address is
             Office 3812, Addax Tower, Al Reem Island: a virtual office near ADGM's main business district that sits inside
             the ADGM jurisdiction itself. It is a professional business address in Abu Dhabi from
             AED {VO_PRICE} a month, and a virtual office UAE founders can use from anywhere in the world.
@@ -76,8 +76,7 @@ export function Packages() {
         </div>
         <p className="fine center">
           An affordable virtual office in ADGM: the ADGM virtual office cost is AED {VO_PRICE} a month on Basic
-          (regular AED {VO_REGULAR}). ADGM government fees are separate. See current offers on{' '}
-          <a href={`${MAIN_SITE}/pricing`}>aegiscoworking.ae/pricing</a>.
+          (regular AED {VO_REGULAR}). ADGM government fees are separate. Ask us on WhatsApp for current offers.
         </p>
       </div>
     </section>
@@ -166,7 +165,6 @@ export function Serviced() {
           </ul>
           <div className="sv-ctas">
             <a className="btn btn-ink" href={wa('Hi Aegis, I would like a serviced office in ADGM.')} target="_blank" rel="noopener noreferrer">Ask about a serviced office</a>
-            <a className="link-arrow" href={`${MAIN_SITE}/private-office`}>Private office details <Icon name="arrow" size={15} /></a>
           </div>
         </div>
         <div className="sv-cards">
@@ -201,7 +199,7 @@ export function Compare() {
                 <th scope="col"><span className="sr-only">Feature</span></th>
                 <th scope="col" className="cmp-hl">Virtual office</th>
                 <th scope="col">Dedicated desk</th>
-                <th scope="col">Private office</th>
+                <th scope="col">Serviced office</th>
               </tr>
             </thead>
             <tbody>
@@ -210,16 +208,12 @@ export function Compare() {
                   <th scope="row">{r.label}</th>
                   <td className="cmp-hl" data-label="Virtual office">{cell(r.vo)}</td>
                   <td data-label="Dedicated desk">{cell(r.desk)}</td>
-                  <td data-label="Private office">{cell(r.office)}</td>
+                  <td data-label="Serviced office">{cell(r.office)}</td>
                 </tr>
               ))}
             </tbody>
           </table>
         </Reveal>
-        <p className="fine center">
-          Not sure which you need? Read <a href={`${MAIN_SITE}/blog/which-adgm-workspace-fits-you`}>which ADGM workspace fits you</a>, or
-          see the <a href="https://dedicateddeskadgm.online/">dedicated desk in ADGM</a> guide.
-        </p>
       </div>
     </section>
   )
@@ -242,7 +236,6 @@ export function Audiences() {
               <span className="aud-ic"><Icon name={a.icon} size={22} strokeWidth={1.6} /></span>
               <h3>{a.title}</h3>
               <p>{a.text}</p>
-              <a href={`${MAIN_SITE}/blog/${a.link.slug}`}>{a.link.text}<Icon name="arrow" size={15} /></a>
             </Reveal>
           ))}
         </ul>
