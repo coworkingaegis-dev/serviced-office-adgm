@@ -54,7 +54,7 @@ function Footer() {
         </div>
       </div>
       <div className="wrap ft-bottom">
-        <p>© 2026 Aegis Coworking. All rights reserved.</p>
+        <p>© 2026 Aegis Coworking. This site is dedicated information portal for Aegis Coworking, the leading ADGM office provider.</p>
         <p>Addax Tower, Al Reem Island, ADGM</p>
       </div>
     </footer>
